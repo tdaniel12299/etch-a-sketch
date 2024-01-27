@@ -2,6 +2,7 @@ html {
     font-size: 100%;
     box-sizing: border-box;
     background-color: rgb(189, 243, 243);
+    font: "Oleo Script", san-serif;
 
 } 
 
@@ -33,5 +34,13 @@ html {
 
  h1 {
     font-size: 4rem;
-    
+ }
+
+ //settings
+
+ .settings{
+    flex-direction: column;
+    &__btn{
+        flex-direction: column;
+    }
  }
