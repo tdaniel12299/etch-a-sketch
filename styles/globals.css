@@ -1,0 +1,40 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.container {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  max-width: 69.375rem;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-jc-sa {
+  justify-content: space-around;
+}
+
+.flex-jc-c {
+  justify-content: center;
+}
+
+.flex-ac-c {
+  align-content: center;
+}
+
+header {
+  justify-items: center;
+}
+header__title {
+  justify-items: center;
+}/*# sourceMappingURL=globals.css.map */
