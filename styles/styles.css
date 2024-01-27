@@ -40,7 +40,24 @@ h1 {
 
 .settings {
   flex-direction: column;
+  border: solid 2px black;
+  border-radius: 10px;
+  background-color: aliceblue;
 }
 .settings__btn {
   flex-direction: column;
+}
+
+input[type=color] {
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 50%;
+  margin: 20px;
+  color: inherit;
+  background-color: buttonface;
+}
+
+input[type=color]:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */
