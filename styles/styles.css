@@ -1,6 +1,7 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
+  background-color: rgb(180, 245, 245);
 }
 
 *, *::before, *::after {
@@ -30,4 +31,8 @@ html {
 
 .flex-ac-c {
   align-content: center;
+}
+
+h1 {
+  font-size: 4rem;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,8 @@
 html {
     font-size: 100%;
     box-sizing: border-box;
+    background-color: rgb(189, 243, 243);
+
 } 
 
 *, *::before, *::after {
@@ -29,12 +31,7 @@ html {
     align-content: center;
   }
 
-  //header
-  header{
-
-    justify-items: center;
-
-    &__title  {
-        justify-items: center   ;
-    }
-  }
+ h1 {
+    font-size: 4rem;
+    
+ }
