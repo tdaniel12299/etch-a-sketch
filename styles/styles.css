@@ -43,6 +43,7 @@ h1 {
   border: solid 2px black;
   border-radius: 10px;
   background-color: aliceblue;
+  box-shadow: 5px 10px;
 }
 .settings__btn {
   flex-direction: column;
@@ -60,4 +61,9 @@ input[type=color] {
 
 input[type=color]:hover {
   cursor: pointer;
+}
+
+.main__sketch {
+  width: 6.25rem;
+  height: auto;
 }/*# sourceMappingURL=styles.css.map */
