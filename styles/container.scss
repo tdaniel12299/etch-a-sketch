@@ -3,13 +3,14 @@
 .sketch{
     width: 31.25rem;
     height: 31.25rem;
-    // border: 2px solid black;
+    
     flex-wrap: wrap;
     
     &__item{
         display: grid;
         border: 0.5px solid black;
         text-align: center;
+        grid-auto-flow: row;
         
     
     }
