@@ -2,7 +2,7 @@ html {
     font-size: 100%;
     box-sizing: border-box;
     background-color: rgb(189, 243, 243);
-    font: "Oleo Script", san-serif;
+    font-family: "Oleo Script", san-serif;
 
 } 
 
@@ -11,54 +11,61 @@ html {
     
 }
 .container {
-    padding-top: 2.25rem;
-    padding-bottom: 2.25rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    max-width: 69.375rem;
-    margin: 0 auto;
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  max-width: 69.375rem;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+.flex-jc-sa {
+  justify-content: space-around;
+}
+.flex-jc-c {
+  justify-content: center;
+}
+.flex-ac-c {
+  align-content: center;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+//settings
+
+.settings{
+  flex-direction: column;
+  border:solid 2px black ;
+  border-radius: 10px;
+  background-color: aliceblue;
+  box-shadow: 5px 10px;
+  &__btn{
+      flex-direction: column;
+
+    
   }
   
-  .flex {
-    display: flex;
-  }
-  .flex-jc-sa {
-    justify-content: space-around;
-  }
-  .flex-jc-c {
-    justify-content: center;
-  }
-  .flex-ac-c {
-    align-content: center;
-  }
+}
 
- h1 {
-    font-size: 4rem;
- }
+input[type="color"] {
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 50%;
+  margin: 20px;
+  color: inherit;
+  background-color: buttonface;
+}
+input[type="color"]:hover {
+  cursor: pointer;
+}
 
- //settings
-
- .settings{
-    flex-direction: column;
-    border:solid 2px black ;
-    border-radius: 10px;
-    background-color: aliceblue;
-    box-shadow: 5px 10px;
-    &__btn{
-        flex-direction: column;
-    }
-    
- }
-
- input[type="color"] {
-    width: 80px;
-    height: 80px;
-    border: none;
-    border-radius: 50%;
-    margin: 20px;
-    color: inherit;
-    background-color: buttonface;
- }
- input[type="color"]:hover {
-    cursor: pointer;
- }
+button {
+padding: 5px;
+margin: 5px;
+}

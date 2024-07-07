@@ -2,7 +2,7 @@ html {
   font-size: 100%;
   box-sizing: border-box;
   background-color: rgb(189, 243, 243);
-  font: "Oleo Script", san-serif;
+  font-family: "Oleo Script", san-serif;
 }
 
 *, *::before, *::after {
@@ -63,7 +63,24 @@ input[type=color]:hover {
   cursor: pointer;
 }
 
-.main__sketch {
-  width: 6.25rem;
+button {
+  padding: 5px;
+  margin: 5px;
+}
+
+.sketch {
+  width: 31.25rem;
   height: auto;
+  border: 2px solid black;
+}
+.sketch__item {
+  display: grid;
+  border: 1px solid black;
+  text-align: center;
+}
+.sketch__#grid {
+  box-sizing: initial;
+  border: 2px solid black;
+  flex-wrap: wrap;
+  width: 31.25rem;
 }/*# sourceMappingURL=styles.css.map */

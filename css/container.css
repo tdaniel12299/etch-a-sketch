@@ -1,11 +1,10 @@
-.main__sketch {
-  width: 6.25rem;
-  height: auto;
-  border: solid 2px black;
+.sketch {
+  width: 31.25rem;
+  height: 31.25rem;
+  border: 2px solid black;
 }
-.main__sketch__#grid {
-  width: 50px;
-  height: 50px;
-  background-color: #ccc;
-  border: 1px solid #000;
+.sketch__item {
+  display: grid;
+  border: 1px solid black;
+  text-align: center;
 }/*# sourceMappingURL=container.css.map */

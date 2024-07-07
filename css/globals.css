@@ -2,7 +2,7 @@ html {
   font-size: 100%;
   box-sizing: border-box;
   background-color: rgb(189, 243, 243);
-  font: "Oleo Script", san-serif;
+  font-family: "Oleo Script", san-serif;
 }
 
 *, *::before, *::after {
@@ -61,4 +61,9 @@ input[type=color] {
 
 input[type=color]:hover {
   cursor: pointer;
+}
+
+button {
+  padding: 5px;
+  margin: 5px;
 }/*# sourceMappingURL=globals.css.map */

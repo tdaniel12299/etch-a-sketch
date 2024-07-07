@@ -1,37 +1,30 @@
-let rows = 5;
-let columns = 5;
+let rowsWidth = 5;
+let columnsHeight = 5;
+let numOfDiv = 25;
 
-const gridContainer = document.getElementById('grid');
 
-for (let i = 0; i < rows; i++){
-    for(let j = 0; j < columns; j++){
+
+let createGrid = (rowsWidth, columnsHeight) => {
+    const gridContainer = document.getElementById('grid');
+    // gridContainer.style.display = 'grid';
+    // gridContainer.style.gridTemplateColumns = `repeat(${columnsHeight}, 1fr)`;
+    // gridContainer.style.gridTemplateRows = `repeat(${rowsWidth}, 1fr)`;
+
+    for (let i = 0; i < rowsWidth * columnsHeight; i++ ) {
         const gridItem = document.createElement('div');
-        gridItem.className = 'grid-item';
+        gridItem.className = 'item';
+        gridItem.textContent = "w";
+        gridItem.style.border = "2px solid black";
+
+        gridContainer.style.display = 'grid';
+        gridContainer.style.gridTemplateColumns = `repeat(${columnsHeight}, 5fr)`;
+        gridContainer.style.gridTemplateRows = `repeat(${rowsWidth}, 1fr)`;
 
         gridContainer.appendChild(gridItem)
     }
+
 }
 
+createGrid(rowsWidth,columnsHeight)
 
 
-
-
-// let getGrid = (gridSize) => {
-
-//     const container = document.querySelector("#container");
-//         // container.style.display = "grid";
-//         // container.style.gridTemplateColumns = "auto auto auto auto";
-
-//         const squareSize = 500 / gridSize;
-
-//         for (let i = 0; i < gridSize * gridSize; i++ ) {
-//             const gridItem = document.createElement("div");
-
-//             gridItem.classList.add("grid-item");
-//             gridItem.style.height(`${squareSize}px`);
-//             gridItem.style.width(`${squareSize}px`);
-
-//             container.appendChild("gridItem")
-
-//         }
-// }
