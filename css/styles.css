@@ -1,0 +1,69 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  background-color: rgb(189, 243, 243);
+  font: "Oleo Script", san-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.container {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  max-width: 69.375rem;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-jc-sa {
+  justify-content: space-around;
+}
+
+.flex-jc-c {
+  justify-content: center;
+}
+
+.flex-ac-c {
+  align-content: center;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.settings {
+  flex-direction: column;
+  border: solid 2px black;
+  border-radius: 10px;
+  background-color: aliceblue;
+  box-shadow: 5px 10px;
+}
+.settings__btn {
+  flex-direction: column;
+}
+
+input[type=color] {
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 50%;
+  margin: 20px;
+  color: inherit;
+  background-color: buttonface;
+}
+
+input[type=color]:hover {
+  cursor: pointer;
+}
+
+.main__sketch {
+  width: 6.25rem;
+  height: auto;
+}/*# sourceMappingURL=styles.css.map */
