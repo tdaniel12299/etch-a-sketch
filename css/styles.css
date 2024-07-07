@@ -9,6 +9,14 @@ html {
   box-sizing: inherit;
 }
 
+.minwidth {
+  min-width: 31.25rem;
+}
+
+.minheight {
+  min-height: 31.25rem;
+}
+
 .container {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
@@ -70,17 +78,11 @@ button {
 
 .sketch {
   width: 31.25rem;
-  height: auto;
-  border: 2px solid black;
+  height: 31.25rem;
+  flex-wrap: wrap;
 }
 .sketch__item {
   display: grid;
-  border: 1px solid black;
+  border: 0.5px solid black;
   text-align: center;
-}
-.sketch__#grid {
-  box-sizing: initial;
-  border: 2px solid black;
-  flex-wrap: wrap;
-  width: 31.25rem;
 }/*# sourceMappingURL=styles.css.map */
