@@ -41,6 +41,10 @@ html {
   align-content: center;
 }
 
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
 h1 {
   font-size: 4rem;
 }
@@ -59,6 +63,15 @@ h1 {
 }
 .settings__btn {
   flex-direction: column;
+}
+
+.values {
+  align-items: flex-start;
+}
+
+p {
+  padding-top: 0;
+  margin-top: 0;
 }
 
 input[type=range] {
@@ -96,7 +109,6 @@ input[type=color] {
   color: inherit;
   background-color: buttonface;
 }
-
 input[type=color]:hover {
   cursor: pointer;
 }

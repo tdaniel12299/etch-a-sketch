@@ -41,6 +41,10 @@ html {
   align-content: center;
 }
 
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
 h1 {
   font-size: 4rem;
 }/*# sourceMappingURL=globals.css.map */
