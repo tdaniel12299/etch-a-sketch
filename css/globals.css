@@ -10,15 +10,14 @@ html {
 }
 
 .minwidth {
-  min-width: 31.25rem;
+  min-width: 37.5rem;
 }
 
 .minheight {
-  min-height: 31.25rem;
+  min-height: 37.5rem;
 }
 
 .container {
-  padding-top: 2.25rem;
   padding-bottom: 2.25rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -44,34 +43,4 @@ html {
 
 h1 {
   font-size: 4rem;
-}
-
-.settings {
-  flex-direction: column;
-  border: solid 2px black;
-  border-radius: 10px;
-  background-color: aliceblue;
-  box-shadow: 5px 10px;
-}
-.settings__btn {
-  flex-direction: column;
-}
-
-input[type=color] {
-  width: 80px;
-  height: 80px;
-  border: none;
-  border-radius: 50%;
-  margin: 20px;
-  color: inherit;
-  background-color: buttonface;
-}
-
-input[type=color]:hover {
-  cursor: pointer;
-}
-
-button {
-  padding: 5px;
-  margin: 5px;
 }/*# sourceMappingURL=globals.css.map */

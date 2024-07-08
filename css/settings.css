@@ -1,50 +1,3 @@
-html {
-  font-size: 100%;
-  box-sizing: border-box;
-  background-color: rgb(189, 243, 243);
-  font-family: "Oleo Script", san-serif;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
-.minwidth {
-  min-width: 37.5rem;
-}
-
-.minheight {
-  min-height: 37.5rem;
-}
-
-.container {
-  padding-bottom: 2.25rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  max-width: 69.375rem;
-  margin: 0 auto;
-}
-
-.flex {
-  display: flex;
-}
-
-.flex-jc-sa {
-  justify-content: space-around;
-}
-
-.flex-jc-c {
-  justify-content: center;
-}
-
-.flex-ac-c {
-  align-content: center;
-}
-
-h1 {
-  font-size: 4rem;
-}
-
 .settings {
   padding-top: 2.25rem;
   flex-direction: column;
@@ -96,7 +49,6 @@ input[type=color] {
   color: inherit;
   background-color: buttonface;
 }
-
 input[type=color]:hover {
   cursor: pointer;
 }
@@ -111,14 +63,4 @@ button {
   border-radius: 1px 30px;
   border-width: 4px 1px;
   font-weight: 500;
-}
-
-.sketch {
-  width: 31.25rem;
-  height: 31.25rem;
-  flex-wrap: wrap;
-}
-.sketch__item {
-  display: grid;
-  border: 0.05px solid rgb(196, 190, 190);
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=settings.css.map */

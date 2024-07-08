@@ -1,0 +1,74 @@
+.settings{
+    padding-top: 2.25rem;
+    flex-direction: column;
+    border:solid 2px black ;
+    border-radius: 10px;
+    background-color: aliceblue;
+    box-shadow: 5px 10px;
+    
+    &__slider{
+      padding-top: 5px;
+      outline: none;
+      }
+    
+    &__btn{
+        flex-direction: column;
+  
+    }
+    
+  }
+  
+  input[type="range"]{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px; 
+    border-radius: 12px;
+    background:linear-gradient(90deg, rgb(118, 118, 233) 60%, rgb(193, 193, 238) 60%); 
+    outline: none; 
+    box-shadow: inset 1px 4px 1px rgba(0,0,0,.2);
+    -webkit-transition-duration: 0.2s;
+    transition: opacity 0.2s;
+    transition-duration: 0.2s;
+    
+    &::-webkit-slider-thumb, ::-moz-range-thumb,::-webkit-slider-runnable-track{
+      -webkit-appearance: none;
+      border-radius: 50%;
+      color: rgb(158, 202, 240);
+      cursor: pointer;
+      height: 2px;
+      width: 2px;
+      border: 0.2px solid black;
+    }
+    &:hover {
+      opacity: 1;
+    }
+    
+  }
+  
+  input[type="color"] {
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    margin: 20px;
+    color: inherit;
+    background-color: buttonface;
+
+    &:hover {
+        cursor: pointer;
+      }
+  }
+  
+  
+  button {
+  padding: 7px;
+  margin: 7px;
+  font-family: "Oleo Script", san-serif;
+  font-size: 1.3rem;
+  border: 0.2px solid gray;
+  background-color: rgb(194, 237, 245);
+  border-radius: 1px 30px;
+  border-width: 4px 1px;
+  font-weight: 500;
+  
+  }

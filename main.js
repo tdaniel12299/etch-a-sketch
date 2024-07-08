@@ -1,5 +1,5 @@
 
-let numOfDivs = 10;
+let numOfDivs = 5;
 
 let createGrid = () => {
     gridContainer = document.getElementById('grid');
@@ -13,7 +13,8 @@ let createGrid = () => {
         const item = document.createElement("div");
     
         item.className = 'item';
-        item.style.border = "2px solid black";
+        item.style.border = "0.1px solid black";
+        item.style.backgroundColor = "aliceblue";
 
         gridContainer.appendChild(item);
     }

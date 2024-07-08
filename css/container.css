@@ -5,7 +5,5 @@
 }
 .sketch__item {
   display: grid;
-  border: 0.5px solid black;
-  text-align: center;
-  grid-auto-flow: row;
+  border: 0.05px solid rgb(196, 190, 190);
 }/*# sourceMappingURL=container.css.map */
