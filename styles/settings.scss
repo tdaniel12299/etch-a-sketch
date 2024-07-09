@@ -35,7 +35,7 @@
     appearance: none;
     height: 10px; 
     border-radius: 12px;
-    background:linear-gradient(90deg, rgb(118, 118, 233) 60%, rgb(193, 193, 238) 60%); 
+    background:linear-gradient(90deg, rgb(118, 118, 233) 0%, rgb(193, 193, 238) 60%); 
     outline: none; 
     box-shadow: inset 1px 4px 1px rgba(0,0,0,.2);
     -webkit-transition-duration: 0.2s;
@@ -82,5 +82,10 @@ button {
   border-radius: 1px 30px;
   border-width: 4px 1px;
   font-weight: 500;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.6);
+  }
 
   }
