@@ -50,13 +50,16 @@ input[type=range]:hover {
 }
 
 input[type=color] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   width: 80px;
   height: 80px;
   border: none;
   border-radius: 50%;
   margin: 20px;
   color: inherit;
-  background-color: buttonface;
+  background-color: transparent;
 }
 input[type=color]:hover {
   cursor: pointer;
