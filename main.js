@@ -1,13 +1,18 @@
 
+let flag = true
+const defaultColor = "#000000"
+
 let slider = document.getElementById("range1")
 let output = document.getElementById("value")
-gridContainer = document.getElementById('grid')
-defaultColor = document.getElementById('colorPicker')
-clear = document.getElementById("clear")
-// item = document.querySelector('item')
+let gridContainer = document.getElementById('grid')
+
+let pickColor = document.getElementById('colorPicker')
+let black = document.getElementById("black")
+let clear = document.getElementById("clear")
+let rainbow =document.getElementById("rnb")
+let eraser = document.getElementById("eraser")
 
 output.innerHTML = slider.value;
-
 
 
 let createGrid = (defaultNum) => {
@@ -31,27 +36,46 @@ let createGrid = (defaultNum) => {
         item.style.border = "0.1px solid rgba(0,0,0,0.4)";
         item.style.backgroundColor = "aliceblue"
 
-// get random colors
+// get colors
         item.addEventListener("mouseover", () => {
-            item.style.backgroundColor = getRandomColor();
+            if(flag === true){
+                item.style.backgroundColor = getBlackColor();
+            }else if (flag === false) {
+                item.style.backgroundColor = getRandomColor();
+            } else{
+                item.style.backgroundColor = getEraser();
+            }
           });
         gridContainer.appendChild(item);
-
-        
-
     }
 }
 
-
-
 const getRandomColor = () => {
+    isntFlag();
     const red = Math.floor(Math.random() * (255 - 0 + 1)) + 0;
     const green = Math.floor(Math.random() * (255 - 0 + 1)) + 0;
     const blue = Math.floor(Math.random() * (255 - 0 + 1)) + 0;
-  
+    
     return `rgb(${red}, ${green}, ${blue})`;
-  };
-  
+}
+
+const getBlackColor = () => {
+    isFlag();
+    return defaultColor
+}
+
+const getEraser = () => {
+    nullFlag();
+    return "#F0F8FF"
+
+}
+
+// const getColor = (pickColor) => {
+//     pickColor.oninput= () => {
+//         pickColor = pickColor.value
+//     }
+//     console.log(pickColor.value)
+// }
 
 document.addEventListener('DOMContentLoaded',() => {
     gridContainer = document.getElementById('grid')
@@ -65,7 +89,6 @@ slider.oninput = ()=>{
 }
 
 
-
 // adds stylization to slider for a smoother transition 
 
 slider.addEventListener("mousemove", ()=>{
@@ -77,11 +100,30 @@ slider.addEventListener("mousemove", ()=>{
 
 let clearGrid=()=>{
     createGrid(slider.value);
-    console.log("this")
 }
 
+let colorValue =()=> { defaultColor.addEventListener("input", ()=> {
+    let item = document.querySelector(".item");
+
+    item.style.backgroundColor = `${defaultColor}.value`
+})
+}
+
+let isFlag = () => {
+    flag = true
+}
+let isntFlag = () => {
+flag = false
+}
+let nullFlag = () => {
+flag = null
+}
 
 clear.addEventListener("click", clearGrid)
+rainbow.addEventListener("click",getRandomColor)
+eraser.addEventListener("click", getEraser)
+black.addEventListener("click",getBlackColor)
+
 
 
 createGrid(slider.value)
