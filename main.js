@@ -1,14 +1,18 @@
 
 let slider = document.getElementById("range1")
 let output = document.getElementById("value")
-gridContainer = document.getElementById('grid');
+gridContainer = document.getElementById('grid')
+defaultColor = document.getElementById('colorPicker')
+clear = document.getElementById("clear")
+// item = document.querySelector('item')
 
 output.innerHTML = slider.value;
 
 
-let createGrid = (defaultNum) => {
 
-// while loop is to clear the container so the new divs do stack over old divs, used for resizing container
+let createGrid = (defaultNum) => {
+// console.log(defaultColor.value)
+// while loop is to clear the container so the new divs dont stack over old divs, used for resizing container
 
     while (gridContainer.firstChild) {
         gridContainer.removeChild(gridContainer.firstChild)
@@ -25,11 +29,30 @@ let createGrid = (defaultNum) => {
     
         item.className = 'item';
         item.style.border = "0.1px solid rgba(0,0,0,0.4)";
-        item.style.backgroundColor = "aliceblue";
+        item.style.backgroundColor = "aliceblue"
 
+// get random colors
+        item.addEventListener("mouseover", () => {
+            item.style.backgroundColor = getRandomColor();
+          });
         gridContainer.appendChild(item);
+
+        
+
     }
 }
+
+
+
+const getRandomColor = () => {
+    const red = Math.floor(Math.random() * (255 - 0 + 1)) + 0;
+    const green = Math.floor(Math.random() * (255 - 0 + 1)) + 0;
+    const blue = Math.floor(Math.random() * (255 - 0 + 1)) + 0;
+  
+    return `rgb(${red}, ${green}, ${blue})`;
+  };
+  
+
 document.addEventListener('DOMContentLoaded',() => {
     gridContainer = document.getElementById('grid')
 })
@@ -41,6 +64,8 @@ slider.oninput = ()=>{
     createGrid(slider.value)
 }
 
+
+
 // adds stylization to slider for a smoother transition 
 
 slider.addEventListener("mousemove", ()=>{
@@ -49,6 +74,14 @@ slider.addEventListener("mousemove", ()=>{
     slider.style.background = color;
 })
 
+
+let clearGrid=()=>{
+    createGrid(slider.value);
+    console.log("this")
+}
+
+
+clear.addEventListener("click", clearGrid)
 
 
 createGrid(slider.value)
